@@ -1,0 +1,190 @@
+#midasvis
+{
+	font-family: "Open Sans", sans-serif;
+	font-size: 12px;
+	font-weight: 300;
+	margin: 0;
+	padding: 0 0 0 82px;
+	background-color: white;
+	z-index: 99999;
+	position: fixed;
+	top: 0;
+	left: 0; 
+	width: 100%;
+	height: 100%;
+	color: black;
+	overflow: auto;
+}
+
+#midasvis svg
+{
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-position:center; 
+}
+
+#midasvis .node 
+{
+	font-family: Verdana, sans-serif;
+	cursor: pointer;
+}
+
+#midasvis .node:hover 
+{
+	font-weight: bold;
+	fill: #000;
+}
+
+#midasvis .link 
+{
+	stroke-opacity: .4;
+	fill: none;
+	pointer-events: none;
+}
+
+#midasvis .node--target 
+{
+	font-weight: bold;
+	fill: #000;
+}
+
+#midasvis .link--target 
+{
+	stroke-opacity: 1;
+	stroke-width: 2px;
+}
+
+#midasvis .link--clicked
+{
+	stroke-opacity: 1;
+	stroke-width: 3px;
+}
+
+#midasvis .current_focus
+{
+	font-weight: 700;
+}
+
+#midasvis .current_focus,
+#midasvis .current_link
+{
+	font-weight: bold;
+	fill: #000;
+}
+
+#midasvis #vis
+{
+	position: relative;
+}
+
+#midasvis #detaildiv
+{
+	z-index: 1000;
+	background-color: white;
+}
+
+#midasvis #detaildiv h2
+{
+	margin-top: 0;
+	color: black;
+}
+
+#midasvis #detaildiv p
+{
+	line-height: 1.4em;
+}
+
+#midasvis #detaildiv #facimg img
+{
+	width: 75px;
+	height: auto;
+	float: right;
+	padding: 0 0 5px 5px;
+}
+
+#midasvis #detaildiv #pertitle
+{
+	font-weight: 700;
+}
+
+
+#midasvis #paddiv
+{
+	margin: 0.5em;
+}
+
+#midasvis #close circle
+{
+	fill: white;
+	stroke-width: 2px;
+	cursor: pointer;
+}
+
+#midasvis #close line
+{
+	stroke-width: 2px;
+	stroke: black;
+}
+
+#midasvis text.label
+{
+	cursor: pointer;
+}
+
+#midasvis #controlbanner h2, #midasvis #controlbanner h3
+{
+	color: white;
+}
+
+#midasvis #controlbanner
+{
+	position: fixed;
+	top: 0;
+	left: 0; 
+	width: 100%;
+	border: 0;
+	margin: 0;
+	padding: 1em;
+	height: 100%;
+	width: 165px;
+	background-color: #00274C;
+	color: white;
+}
+
+#midasvis #controlbanner p
+{
+	line-height: 1.6em;
+}
+
+#midasvis li
+{
+	list-style-image: none;
+}
+
+#midasvis #filterlist li
+{
+	list-style: none;
+}
+	
+#midasvis .highlight
+{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#midasvis .lowlight
+{
+	opacity: 0.95;
+}
+
+#midasvis #tooltip
+{
+	position: absolute;
+	background-color: white;
+	border: 1px solid black;
+	padding: 0.5em;
+	margin: 0;
+	line-height: 1em;
+}

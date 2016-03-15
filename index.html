@@ -1,0 +1,173 @@
+<html>
+    <head>
+    	<title>MIDAS Academic Visualization - Shayne</title>
+    </head>
+    <style type="text/css" media="all">@import url("midas.css");</style>
+    <style type="text/css">
+    /* --Header-- */
+    body {
+        padding:0;
+        margin:0;
+    }
+
+    .site-header-wrapper 
+    {
+        background: #00274c;
+        color: white;
+        height: 100px;
+        margin: 0 0 0px; 
+    }
+
+    .site-header 
+    {
+        width: 960px;
+        margin: 0 auto; 
+    }
+
+    .site-header h1 
+    {
+        float: left;
+        margin: 0;
+        display: block; 
+    }
+
+    .site-branding 
+    {
+        float: left;
+        width: 720px; 
+    }
+
+    .block-m 
+    {
+        background: url(img/block.png) no-repeat;
+        width: 68px;
+        height: 49px;
+        display: block;
+        float: left;
+        margin: 25px 12px 0 20px; 
+    }
+
+    .site-title 
+    {
+        background: url(img/logo.png) no-repeat;
+        display: block;
+        width: 516px;
+        height: 50px;
+        float: left;
+        margin: 24px 0 0; 
+    }
+
+    .site-header-right 
+    {
+        float: right;
+        width: 200px;
+        margin: 40px 20px 0 0; 
+    }
+
+    .site-header-right a 
+    {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em; 
+    }
+
+    .site-header-right a:hover 
+    {
+        color: #d8dfe8; 
+    }
+
+    .site-header-right a + a 
+    {
+        margin-left: 6px; 
+    }
+
+    /* --Search bar-- */
+    .search-form 
+    {
+        width: 175px;
+        border: solid 1px #d8dfe8;
+        float: left;
+        margin-right: 10px; 
+    }
+
+    .search-form label, .search-form input 
+    {
+        width: 140px;
+        font-size: 0.875em; 
+    }
+
+    .search-form .search-btn 
+    {
+        width: 35px; 
+    }
+
+    .search-form label, .search-form input, .search-form .search-btn {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        float: left;
+        background: white;
+        border: none;
+        margin: 0;
+        height: 30px;
+        color: #00274c; 
+    }
+
+    /* --Main Content-- */
+    .content
+    {
+    	width: 90%;
+    	max-width: 960px;
+    	margin: 1em auto;
+    	background-color: white;
+    }
+
+    #closevis
+    {
+    	position: fixed;
+    	top: 5px;
+    	right: 5px;
+    	cursor: pointer;
+    }
+
+    .spawnvis img
+    {
+    	cursor: pointer;
+    }
+    </style>
+
+    <body>
+    	<div class="site-header-wrapper">
+    		<header class="site-header">
+    			<div class="site-branding">
+    				<h1><a class="site-title" href="http://midas.umich.edu/" rel="home"></a></h1>
+    			</div>
+    			<div class="site-header-right">
+    				<form role="search" method="get" class="search-form clearfix" action="http://midas.umich.edu/">
+    					<label>
+    						<span class="screen-reader-text"></span>
+    						<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s">
+    					</label>
+    					<button class="search-btn"><img src="img/search.png"/></i></button>
+    				</form>
+    			</div>
+    		</header><!-- #masthead -->
+    	</div>
+    	<div class="content">
+    		<h1>MIDAS Research Network Visualization</h1>
+
+    		<p>The <strong>Michigan Institute for Data Science (MIDAS)</strong> is a new multidisciplinary department at the University of Michigan, created in July 2015 as part of the university's <a href="http://midas.umich.edu/dsi" target="_blank">Data Science Initiative</a>. MIDAS aims to maintain a thriving data science community on the UM campus by fostering collaborative cross-cutting methodological and applied research. It will also coordinate data science education at the university, promote data science infrastructure on UM campus, and engage with industry on data science applications.</p>
+
+    		<p>MIDAS is comprised of an <a href="http://midas.umich.edu/faculty" target="_blank">interdisciplinary faculty</a> of data scientists, from computer science and engineering, statistics, information science, public health, mathematics, and a range of other academic departments. Active data science research at MIDAS varies from data management, machine learning, data visualization, and addressing problems in disease model discovery, healthcare policy, materials synthesis, biology and social sciences.</p>
+
+    		<p>The MIDAS Research Visualizer focuses on the connections among its faculty: how deparments areas connect to academic fields, how academic fields to research methodologies, and how research methodologies connect with faculty. The goal is to funnel visitors to in-depth content about MIDAS by presenting faculty connections in a concise and visual manner.</p>
+
+    		<h2>Explore MIDAS Research Network</h2>
+    		<p>The visualization here presents a snapshot of the MIDAS research community. We encourage you to visit <a href="http://midas.umich.edu/" target="_blank">MIDAS homepage</a> for the most updated content about the institute.</p>
+
+    		<p class="spawnvis" style="text-align: center"><img src="img/button.png" /></p>
+    	</div>
+    	<script src="http://d3js.org/d3.v3.min.js"></script>
+    	<script src="midas.js"></script>
+    </body>
+</html>
